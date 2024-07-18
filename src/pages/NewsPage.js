@@ -41,7 +41,7 @@ const NewsPage = () => {
 
   return (
     <div className="news-page">
-      <h1>Football News</h1>
+      <h1>Noticias Futbol</h1>
       <LeagueSelector
         leagues={leagues}
         selectedLeague={selectedLeague}
