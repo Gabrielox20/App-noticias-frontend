@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NewsItem from '../components/NewsItem';
 import LeagueSelector from '../components/LeagueSelectorNews';
-const dotenv = require('dotenv');
+require('dotenv').config();
+const path = require('path');
+
+// Tu código aquí
+
 import '../styles/NewsPage.css';
 
 const leagues = [
