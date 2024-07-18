@@ -1,0 +1,16 @@
+.match-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}
+  
+  .match-item h2 {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .match-item p {
+    margin: 0.5rem 0;
+  }
+  

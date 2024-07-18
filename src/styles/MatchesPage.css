@@ -1,0 +1,20 @@
+.matches-page {
+  padding: 20px;
+}
+
+.year-selector {
+  margin: 10px 0;
+}
+
+.matchday-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.matches-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+  
