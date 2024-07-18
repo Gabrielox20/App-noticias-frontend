@@ -25,7 +25,7 @@ const NewsPage = () => {
     const fetchNews = async () => {
       try {
         console.log(selectedLeague)
-        const response = await axios.get(`${process.env.BACKEND}/news/`, {
+        const response = await axios.get('https://app-noticias-backend.onrender.com/news/', {
           params: { league: selectedLeague }
         });
         console.log(response.data);
