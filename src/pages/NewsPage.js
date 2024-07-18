@@ -26,8 +26,9 @@ const NewsPage = () => {
         });
         console.log(response.data);
 
-        // Ordenar los artículos por fecha de publicación
-        const sortedArticles = response.data.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+        // Filtrar y ordenar los artículos
+        const filteredArticles = response.data.filter(article => article.title !== 'Google Noticias');
+        const sortedArticles = filteredArticles.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
         setArticles(sortedArticles);
       } catch (error) {
         console.error('Error fetching news:', error);
