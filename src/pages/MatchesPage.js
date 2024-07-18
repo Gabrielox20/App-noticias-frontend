@@ -3,8 +3,7 @@ import axios from 'axios';
 import MatchItem from '../components/MatchItem';
 import LeagueSelector from '../components/LeagueSelector';
 import '../styles/MatchesPage.css';
-require('dotenv').config();
-const path = require('path');
+
 
 const leagues = [
   { code: 'PL', name: 'Premier League' },
