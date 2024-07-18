@@ -43,6 +43,8 @@ const MatchesPage = () => {
           return matchesInMatchday.some(match => new Date(match.utcDate) >= today);
         }) || 1;
 
+        console.log(matchday)
+
         setCurrentMatchday(matchday);
       } catch (error) {
         console.error('Error fetching matches:', error);
