@@ -4,7 +4,6 @@ import MatchItem from '../components/MatchItem';
 import LeagueSelector from '../components/LeagueSelector';
 import '../styles/MatchesPage.css';
 
-
 const leagues = [
   { code: 'PL', name: 'Premier League' },
   { code: 'PD', name: 'La Liga' },
