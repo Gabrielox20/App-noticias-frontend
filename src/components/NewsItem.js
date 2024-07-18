@@ -2,6 +2,11 @@ import React from 'react';
 import '../styles/NewsItem.css';
 
 const NewsItem = ({ title, description, url, urlToImage, publishedAt, source }) => {
+  // Condición para no renderizar artículos con el título "Google Noticias"
+  if (title === 'Google Noticias') {
+    return null;
+  }
+
   return (
     <div className="news-item">
       <h2>{title}</h2>
