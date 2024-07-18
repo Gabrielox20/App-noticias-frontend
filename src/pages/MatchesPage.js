@@ -4,7 +4,6 @@ import MatchItem from '../components/MatchItem';
 import LeagueSelector from '../components/LeagueSelector';
 import '../styles/MatchesPage.css';
 
-
 const leagues = [
   { code: 'PL', name: 'Premier League' },
   { code: 'PD', name: 'La Liga' },
@@ -24,7 +23,7 @@ const MatchesPage = () => {
   useEffect(() => {
     const fetchMatches = async () => {
       try {
-        const response = await axios.get(`${process.env.BACKEND}/results/competition/${selectedLeague}/matches`, {
+        const response = await axios.get(`https://app-noticias-backend.onrender.com/results/competition/${selectedLeague}/matches`, {
           params: { year }
         });
 
