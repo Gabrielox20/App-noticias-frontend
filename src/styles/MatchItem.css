@@ -1,16 +1,21 @@
 .match-item {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
-  width: 200px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
-  
-  .match-item h2 {
-    margin: 0 0 0.5rem 0;
-  }
-  
-  .match-item p {
-    margin: 0.5rem 0;
-  }
-  
+
+.team {
+  display: flex;
+  align-items: center;
+}
+
+.team-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.team h2 {
+  margin: 0;
+}
