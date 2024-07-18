@@ -4,6 +4,7 @@ import NewsPage from './pages/NewsPage';
 import MatchesPage from './pages/MatchesPage'; // Importa la nueva página
 import Navbar from './components/Navbar';
 import './styles/App.css';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<NewsPage />} />
         <Route path="/matches" element={<MatchesPage />} /> {/* Nueva ruta */}
       </Routes>
+      <Analytics />
     </Router>
   );
 }
