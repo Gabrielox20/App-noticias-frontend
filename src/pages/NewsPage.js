@@ -24,10 +24,11 @@ const NewsPage = () => {
         const response = await axios.get('https://app-noticias-backend.onrender.com/news/', {
           params: { league: selectedLeague }
         });
-        console.log(response.data);
+        //console.log(response.data);
 
         // Filtrar y ordenar los artículos
-        const filteredArticles = response.data.filter(article => article.title !== 'Google Noticias');
+        const filteredArticles = response.data.filter(article => article.title !== "Google Noticias");
+        console.log(filteredArticles);
         const sortedArticles = filteredArticles.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
         setArticles(sortedArticles);
       } catch (error) {
