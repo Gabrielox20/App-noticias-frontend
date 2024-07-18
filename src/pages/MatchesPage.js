@@ -35,6 +35,7 @@ const MatchesPage = () => {
 
         setMatchdays(Object.keys(groupedMatches).sort((a, b) => a - b));
         setMatches(groupedMatches);
+        console.log(groupedMatches);
         
         // Find the current matchday based on today's date
         const today = new Date();
