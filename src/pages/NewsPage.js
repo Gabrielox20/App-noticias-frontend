@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NewsItem from '../components/NewsItem';
 import LeagueSelector from '../components/LeagueSelectorNews';
+const dotenv = require('dotenv');
 import '../styles/NewsPage.css';
 
 const leagues = [
@@ -21,7 +22,7 @@ const NewsPage = () => {
     const fetchNews = async () => {
       try {
         console.log(selectedLeague)
-        const response = await axios.get('http://localhost:5000/news/', {
+        const response = await axios.get(`${process.env.BACKEND}/news/`, {
           params: { league: selectedLeague }
         });
         console.log(response.data);
