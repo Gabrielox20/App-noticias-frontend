@@ -2,12 +2,10 @@ import React from 'react';
 import '../styles/NewsItem.css';
 
 const NewsItem = ({ title, description, url, urlToImage, publishedAt, source }) => {
-  // Condición para no renderizar artículos con el título "Google Noticias"
-  if (title === 'Google Noticias') {
+  // Separar el título por espacios y verificar si la primera palabra es "Google"
+  const firstWord = title.split(' ')[0];
+  if (firstWord === 'Google') {
     return null;
-  }
-  else{
-    console.log(title)
   }
 
   return (
