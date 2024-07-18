@@ -2,10 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NewsItem from '../components/NewsItem';
 import LeagueSelector from '../components/LeagueSelectorNews';
-
-
-// Tu código aquí
-
 import '../styles/NewsPage.css';
 
 const leagues = [
