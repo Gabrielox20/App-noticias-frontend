@@ -6,6 +6,9 @@ const NewsItem = ({ title, description, url, urlToImage, publishedAt, source }) 
   if (title === 'Google Noticias') {
     return null;
   }
+  else{
+    console.log(title)
+  }
 
   return (
     <div className="news-item">
