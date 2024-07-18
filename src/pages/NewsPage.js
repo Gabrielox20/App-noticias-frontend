@@ -20,12 +20,15 @@ const NewsPage = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        console.log(selectedLeague)
+        console.log(selectedLeague);
         const response = await axios.get('https://app-noticias-backend.onrender.com/news/', {
           params: { league: selectedLeague }
         });
         console.log(response.data);
-        setArticles(response.data);
+
+        // Ordenar los artículos por fecha de publicación
+        const sortedArticles = response.data.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+        setArticles(sortedArticles);
       } catch (error) {
         console.error('Error fetching news:', error);
       }
